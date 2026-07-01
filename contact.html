@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Online | Fast Track Motors Newcastle</title>
+<meta name="description" content="Book your MOT, service or repair at Fast Track Motors in Newcastle upon Tyne. Quick online booking, confirmed by phone — or call us directly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/system.css">
+<style>
+/* page hero shared */
+.page-hero{padding:150px 0 70px; position:relative; overflow:hidden;}
+.page-hero::before{content:""; position:absolute; inset:0; background:radial-gradient(120% 80% at 85% 0%, rgba(14,90,87,0.05), transparent 55%), radial-gradient(90% 70% at 5% 100%, rgba(194,32,47,0.04), transparent 50%);}
+.page-hero .wrap{position:relative; z-index:2;}
+.page-hero .crumbs{font-family:var(--font-mono); font-size:12.5px; color:var(--slate); margin-bottom:20px; letter-spacing:0.03em;}
+.page-hero .crumbs a:hover{color:var(--red);}
+.page-hero h1{max-width:780px; margin-bottom:20px;}
+.page-hero .sub{font-size:18px; max-width:600px; line-height:1.65;}
+
+.contact-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:50px; align-items:start;}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr; gap:40px;}}
+.book-card{background:var(--white); border:1px solid var(--line); border-radius:var(--r-lg); padding:38px; box-shadow:var(--shadow-md);}
+.book-card h2{font-size:26px; margin-bottom:6px;}
+.book-card .sub{font-size:15px; color:var(--slate); margin-bottom:26px;}
+.fgroup{margin-bottom:18px;}
+.fgroup label{display:block; font-size:13.5px; font-weight:600; color:var(--ink); margin-bottom:7px;}
+.fgroup input,.fgroup select,.fgroup textarea{
+  width:100%; padding:13px 15px; font-family:var(--font-body); font-size:15px; color:var(--ink);
+  background:var(--canvas); border:1.5px solid var(--mist-2); border-radius:var(--r-sm); transition:border-color .2s, box-shadow .2s;
+}
+.fgroup input:focus,.fgroup select:focus,.fgroup textarea:focus{outline:none; border-color:var(--red); box-shadow:0 0 0 3px rgba(194,32,47,0.1);}
+.fgroup textarea{resize:vertical; min-height:90px;}
+.frow{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+@media(max-width:520px){.frow{grid-template-columns:1fr;}}
+.reg-input{text-transform:uppercase; font-family:var(--font-mono); font-weight:500; letter-spacing:0.08em;}
+.book-card .btn{width:100%; margin-top:6px;}
+.book-card .formnote{font-size:12.5px; color:var(--slate); text-align:center; margin-top:14px;}
+.contact-aside .info-block{background:var(--white); border:1px solid var(--line); border-radius:var(--r-md); padding:26px; margin-bottom:18px;}
+.info-block h3{font-size:18px; margin-bottom:16px;}
+.info-line{display:flex; gap:13px; align-items:flex-start; padding:10px 0; border-top:1px solid var(--line);}
+.info-line:first-of-type{border-top:none;}
+.info-line .ic{width:38px; height:38px; border-radius:10px; background:var(--mist); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+.info-line .ic svg{width:18px; height:18px; stroke:var(--red); fill:none;}
+.info-line .lbl{font-size:12.5px; color:var(--slate);}
+.info-line .val{font-size:15px; font-weight:600; color:var(--ink);}
+.info-line a.val:hover{color:var(--red);}
+.map-embed{border-radius:var(--r-md); overflow:hidden; border:1px solid var(--line); aspect-ratio:16/10; background:var(--mist); position:relative;}
+.map-embed iframe{width:100%; height:100%; border:0;}
+.hours-line{display:flex; justify-content:space-between; padding:8px 0; font-size:14.5px; border-top:1px solid var(--line);}
+.hours-line:first-of-type{border-top:none;}
+.hours-line span:first-child{color:var(--slate);}
+.hours-line span:last-child{font-weight:600; color:var(--ink);}
+.hours-line.closed span:last-child{color:var(--slate); font-weight:400;}
+
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="brand">
+        <img src="logo.jpg" alt="Fast Track Motors">
+        <span class="brand-txt"><strong>Fast Track Motors</strong><span>Newcastle upon Tyne</span></span>
+      </a>
+      <div class="nav-menu"><a href="index.html">Home</a><a href="services.html">Services</a><a href="mot.html">MOT</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a href="reviews.html">Reviews</a><a href="contact.html" class="active">Contact</a></div>
+      <div class="nav-right">
+        <a href="tel:01910000000" class="nav-phone">
+          <svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          0191 000 0000
+        </a>
+        <a href="contact.html" class="btn btn-primary">Book now</a>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+<section class="page-hero" style="padding-bottom:40px;">
+  <div class="wrap">
+    <div class="crumbs" data-reveal><a href="index.html">Home</a> / Book &amp; Contact</div>
+    <span class="eyebrow" data-reveal>Book your visit</span>
+    <h1 data-reveal data-reveal-delay="1">Let's get you booked in.</h1>
+    <p class="sub" data-reveal data-reveal-delay="2">Fill in the form and we'll confirm your slot by phone or text — usually within the hour during opening times. Prefer to talk? Just give us a ring.</p>
+  </div>
+</section>
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="book-card" data-reveal>
+        <h2>Request a booking</h2>
+        <p class="sub">No payment now — we'll confirm everything with you first.</p>
+        <form id="bookForm" onsubmit="return false;">
+          <div class="frow">
+            <div class="fgroup"><label>Your name</label><input type="text" name="name" placeholder="Jane Smith" required></div>
+            <div class="fgroup"><label>Phone</label><input type="tel" name="phone" placeholder="07123 456789" required></div>
+          </div>
+          <div class="frow">
+            <div class="fgroup"><label>Email</label><input type="email" name="email" placeholder="jane@email.com"></div>
+            <div class="fgroup"><label>Reg number</label><input type="text" name="reg" class="reg-input" placeholder="AB12 CDE" maxlength="8"></div>
+          </div>
+          <div class="frow">
+            <div class="fgroup"><label>Service needed</label>
+              <select name="service">
+                <option>MOT test</option><option>MOT + Full service</option><option>Interim service</option>
+                <option>Full service</option><option>Diagnostics</option><option>Brakes / clutch</option>
+                <option>Tyres / alignment</option><option>Air con re-gas</option><option>Something else</option>
+              </select>
+            </div>
+            <div class="fgroup"><label>Preferred date</label><input type="date" name="date"></div>
+          </div>
+          <div class="fgroup"><label>Anything we should know?</label><textarea name="notes" placeholder="e.g. a noise when braking, warning light on the dash..."></textarea></div>
+          <button type="submit" class="btn btn-primary">Request my booking</button>
+          <p class="formnote" id="formMsg">We'll never share your details. By submitting you agree to be contacted about your booking.</p>
+        </form>
+      </div>
+      <div class="contact-aside">
+        <div class="info-block" data-reveal data-reveal-delay="1">
+          <h3>Talk to us</h3>
+          <div class="info-line"><div class="ic"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><div class="lbl">Phone</div><a href="tel:01910000000" class="val">0191 000 0000</a></div></div>
+          <div class="info-line"><div class="ic"><svg viewBox="0 0 24 24" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></div><div><div class="lbl">Email</div><a href="mailto:info@fasttrackmotors.co.uk" class="val">info@fasttrackmotors.co.uk</a></div></div>
+          <div class="info-line"><div class="ic"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="lbl">Workshop</div><div class="val">Unit 4, Industrial Estate,<br>Newcastle upon Tyne, NE4</div></div></div>
+        </div>
+        <div class="info-block" data-reveal data-reveal-delay="2">
+          <h3>Opening hours</h3>
+          <div class="hours-line"><span>Monday – Friday</span><span>8:00 – 18:00</span></div>
+          <div class="hours-line"><span>Saturday</span><span>9:00 – 14:00</span></div>
+          <div class="hours-line closed"><span>Sunday</span><span>Closed</span></div>
+        </div>
+        <div class="map-embed" data-reveal data-reveal-delay="3">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-1.65%2C54.96%2C-1.58%2C54.99&layer=mapnik&marker=54.975%2C-1.615" title="Workshop location" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="logo.jpg" alt="Fast Track Motors">
+        <p>Independent car mechanic specialist serving Newcastle upon Tyne and the surrounding North East.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Google"><svg viewBox="0 0 24 24" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Workshop</h4><ul>
+        <li>Unit 4, Industrial Estate</li><li>Newcastle upon Tyne, NE4</li>
+        <li><a href="tel:01910000000">0191 000 0000</a></li>
+        <li><a href="mailto:info@fasttrackmotors.co.uk">info@fasttrackmotors.co.uk</a></li>
+      </ul></div>
+      <div><h4>Opening hours</h4><ul>
+        <li>Mon – Fri: 8:00 – 18:00</li><li>Saturday: 9:00 – 14:00</li><li>Sunday: Closed</li>
+      </ul></div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="services.html">Services</a></li><li><a href="mot.html">MOT testing</a></li>
+        <li><a href="pricing.html">Pricing</a></li><li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Book now</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Fast Track Motors. All rights reserved.</span>
+      <span>Privacy · Terms · Cookies · Built with care</span>
+    </div>
+  </div>
+</footer>
+<div class="mobile-bar">
+  <a href="tel:01910000000" class="call">Call now</a>
+  <a href="contact.html" class="book">Book online</a>
+</div>
+<script src="js/main.js"></script>
+<script>
+  var f=document.getElementById('bookForm'), m=document.getElementById('formMsg');
+  f && f.addEventListener('submit', function(){
+    m.textContent = "Thanks! This is a demo form — connect it to Web3Forms or your booking system to receive real enquiries.";
+    m.style.color = "var(--teal)";
+    f.querySelector('button').textContent = "Request sent ✓";
+  });
+</script>
+</body>
+</html>

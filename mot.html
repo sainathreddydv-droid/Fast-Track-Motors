@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOT Testing Newcastle £39.99 | Fast Track Motors</title>
+<meta name="description" content="DVSA-approved Class 4 MOT testing in Newcastle upon Tyne from £39.99. Same-day slots, free retest within 10 days, honest results.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/system.css">
+<style>
+/* page hero shared */
+.page-hero{padding:150px 0 70px; position:relative; overflow:hidden;}
+.page-hero::before{content:""; position:absolute; inset:0; background:radial-gradient(120% 80% at 85% 0%, rgba(14,90,87,0.05), transparent 55%), radial-gradient(90% 70% at 5% 100%, rgba(194,32,47,0.04), transparent 50%);}
+.page-hero .wrap{position:relative; z-index:2;}
+.page-hero .crumbs{font-family:var(--font-mono); font-size:12.5px; color:var(--slate); margin-bottom:20px; letter-spacing:0.03em;}
+.page-hero .crumbs a:hover{color:var(--red);}
+.page-hero h1{max-width:780px; margin-bottom:20px;}
+.page-hero .sub{font-size:18px; max-width:600px; line-height:1.65;}
+
+.cta{position:relative; overflow:hidden; background:var(--ink);}
+.cta-bgimg{position:absolute; inset:0; opacity:0.16;}
+.cta-bgimg img{width:100%; height:100%; object-fit:cover;}
+.cta::after{content:""; position:absolute; inset:0; background:linear-gradient(105deg, var(--ink) 38%, rgba(20,24,31,0.72) 100%);}
+.cta .wrap{position:relative; z-index:2; text-align:center; max-width:720px;}
+.cta h2{color:#fff; margin-bottom:18px;}
+.cta p{color:rgba(255,255,255,0.72); font-size:17px; margin-bottom:36px; max-width:520px; margin-left:auto; margin-right:auto;}
+.cta-actions{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
+
+.mot-hero-grid{display:grid; grid-template-columns:1.05fr 0.95fr; gap:50px; align-items:center;}
+.mot-check{background:var(--white); border:1px solid var(--line); border-radius:var(--r-lg); padding:32px; box-shadow:var(--shadow-md);}
+.mot-check h3{font-size:21px; margin-bottom:6px;}
+.mot-check .price-big{font-family:var(--font-display); font-weight:800; font-size:52px; color:var(--ink); line-height:1; margin:18px 0 4px;}
+.mot-check .price-big span{font-size:20px; color:var(--red);}
+.mot-check .price-note{font-size:13.5px; color:var(--slate); margin-bottom:22px;}
+.mot-check ul{list-style:none; margin-bottom:24px;}
+.mot-check li{display:flex; gap:11px; padding:9px 0; font-size:15px; border-top:1px solid var(--line); align-items:center;}
+.mot-check li svg{width:18px; height:18px; stroke:var(--teal); fill:none; flex-shrink:0;}
+.mot-check .btn{width:100%;}
+@media(max-width:860px){.mot-hero-grid{grid-template-columns:1fr; gap:36px;}}
+.info-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:10px;}
+.info-card{background:var(--white); border:1px solid var(--line); border-radius:var(--r-md); padding:28px;}
+.info-card .ic{width:46px; height:46px; border-radius:12px; background:var(--mist); display:flex; align-items:center; justify-content:center; margin-bottom:16px;}
+.info-card .ic svg{width:23px; height:23px; stroke:var(--red); fill:none;}
+.info-card h4{font-family:var(--font-display); font-weight:600; font-size:18px; margin-bottom:8px;}
+.info-card p{font-size:14.5px; line-height:1.55;}
+@media(max-width:760px){.info-grid{grid-template-columns:1fr;}}
+.faq-wrap{max-width:780px; margin:0 auto;}
+.faq{background:var(--white); border:1px solid var(--line); border-radius:var(--r-md); margin-bottom:12px; overflow:hidden;}
+.faq-q{display:flex; justify-content:space-between; align-items:center; gap:16px; padding:22px 24px; cursor:pointer; font-family:var(--font-display); font-weight:600; font-size:17px; color:var(--ink);}
+.faq-q .pl{width:22px; height:22px; flex-shrink:0; position:relative; transition:transform .3s;}
+.faq-q .pl::before,.faq-q .pl::after{content:""; position:absolute; background:var(--red); border-radius:2px; top:50%; left:50%; transform:translate(-50%,-50%);}
+.faq-q .pl::before{width:14px; height:2px;}
+.faq-q .pl::after{width:2px; height:14px; transition:transform .3s;}
+.faq.open .pl::after{transform:translate(-50%,-50%) scaleY(0);}
+.faq-a{max-height:0; overflow:hidden; transition:max-height .35s var(--ease);}
+.faq-a p{padding:0 24px 22px; font-size:15px; line-height:1.65;}
+
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="brand">
+        <img src="logo.jpg" alt="Fast Track Motors">
+        <span class="brand-txt"><strong>Fast Track Motors</strong><span>Newcastle upon Tyne</span></span>
+      </a>
+      <div class="nav-menu"><a href="index.html">Home</a><a href="services.html">Services</a><a href="mot.html" class="active">MOT</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a></div>
+      <div class="nav-right">
+        <a href="tel:01910000000" class="nav-phone">
+          <svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          0191 000 0000
+        </a>
+        <a href="contact.html" class="btn btn-primary">Book now</a>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumbs" data-reveal><a href="index.html">Home</a> / MOT testing</div>
+    <div class="mot-hero-grid">
+      <div>
+        <span class="eyebrow" data-reveal>DVSA-approved MOT centre</span>
+        <h1 data-reveal data-reveal-delay="1">Your MOT, done right — and explained properly.</h1>
+        <p class="sub" data-reveal data-reveal-delay="2">Book your Class 4 MOT at our Newcastle workshop in under a minute. If something fails, we show you exactly what and why, give you a clear quote, and retest free within 10 days.</p>
+        <div style="margin-top:28px; display:flex; gap:14px; flex-wrap:wrap;" data-reveal data-reveal-delay="3">
+          <a href="contact.html" class="btn btn-primary">Book your MOT</a>
+          <a href="tel:01910000000" class="btn btn-outline">Call the workshop</a>
+        </div>
+      </div>
+      <div class="mot-check" data-reveal data-reveal-delay="2">
+        <h3>Class 4 MOT test</h3>
+        <p style="font-size:14px;">Cars, small vans &amp; people carriers</p>
+        <div class="price-big">£39<span>.99</span></div>
+        <div class="price-note">Cap is £54.85 — we keep ours well below.</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Full DVSA inspection</li>
+          <li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Free retest within 10 days</li>
+          <li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Plain-English results</li>
+          <li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>No pressure on repairs</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Book this slot</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="padding-top:30px;">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow" data-reveal>Why book with us</span><h2 data-reveal data-reveal-delay="1">An MOT without the worry.</h2></div>
+    <div class="info-grid">
+      <div class="info-card" data-reveal><div class="ic"><svg viewBox="0 0 24 24" stroke-width="1.7"><path d="M12 2L4 6v6c0 5 3.5 8.7 8 10 4.5-1.3 8-5 8-10V6z"/></svg></div><h4>Honest results</h4><p>We never invent faults. If it passes, it passes — and we tell you what's coming up next year too.</p></div>
+      <div class="info-card" data-reveal data-reveal-delay="1"><div class="ic"><svg viewBox="0 0 24 24" stroke-width="1.7"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg></div><h4>Same-day slots</h4><p>Most MOTs booked and completed the same day. Fail and need work? Often sorted that day too.</p></div>
+      <div class="info-card" data-reveal data-reveal-delay="2"><div class="ic"><svg viewBox="0 0 24 24" stroke-width="1.7"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h4>Free retest</h4><p>Put the work right within 10 days and your retest is completely free. No catch.</p></div>
+    </div>
+  </div>
+</section>
+<section class="reviews" style="background:var(--mist);">
+  <div class="wrap">
+    <div class="section-head center"><span class="eyebrow" data-reveal>MOT questions</span><h2 data-reveal data-reveal-delay="1">Everything you need to know.</h2></div>
+    <div class="faq-wrap">
+      <div class="faq" data-faq data-reveal><div class="faq-q">When is my MOT due?<span class="pl"></span></div><div class="faq-a"><p>Your MOT is due every year, on the anniversary of your last test (or three years after a new car's registration). You can check the exact date free on the GOV.UK website using your registration — or just call us and we'll look it up for you.</p></div></div>
+      <div class="faq" data-faq data-reveal><div class="faq-q">Can I drive without a valid MOT?<span class="pl"></span></div><div class="faq-a"><p>Only to a pre-booked MOT appointment. Driving without a valid MOT otherwise can mean a fine of up to £1,000 and invalidated insurance. If yours is due, book in early to be safe.</p></div></div>
+      <div class="faq" data-faq data-reveal><div class="faq-q">What happens if my car fails?<span class="pl"></span></div><div class="faq-a"><p>We'll explain exactly what failed and why, and give you a clear, no-pressure quote to put it right. Get the work done with us within 10 days and the retest is free.</p></div></div>
+      <div class="faq" data-faq data-reveal><div class="faq-q">How long does an MOT take?<span class="pl"></span></div><div class="faq-a"><p>The test itself takes around 45–60 minutes. You're welcome to wait in our reception, or drop the car off and we'll call you the moment it's ready.</p></div></div>
+      <div class="faq" data-faq data-reveal><div class="faq-q">Can I get my MOT and service together?<span class="pl"></span></div><div class="faq-a"><p>Absolutely — and it's the smart way to do it. Booking both together saves you a trip and often money. Just choose "MOT + Service" when you book online.</p></div></div>
+    </div>
+  </div>
+</section>
+<section class="cta">
+  <div class="cta-bgimg"><img src="https://images.unsplash.com/photo-1632823471565-1ecdf5e3e1e0?auto=format&fit=crop&w=1400&q=80" alt="" onerror="this.src='https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1400&q=80'"></div>
+  <div class="wrap">
+    <h2 data-reveal>Book your MOT in under a minute.</h2>
+    <p data-reveal data-reveal-delay="1">Pick a time that suits you. We'll take it from there.</p>
+    <div class="cta-actions" data-reveal data-reveal-delay="2"><a href="contact.html" class="btn btn-primary">Book your MOT</a><a href="tel:01910000000" class="btn btn-ghost-light">0191 000 0000</a></div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="logo.jpg" alt="Fast Track Motors">
+        <p>Independent car mechanic specialist serving Newcastle upon Tyne and the surrounding North East.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Google"><svg viewBox="0 0 24 24" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Workshop</h4><ul>
+        <li>Unit 4, Industrial Estate</li><li>Newcastle upon Tyne, NE4</li>
+        <li><a href="tel:01910000000">0191 000 0000</a></li>
+        <li><a href="mailto:info@fasttrackmotors.co.uk">info@fasttrackmotors.co.uk</a></li>
+      </ul></div>
+      <div><h4>Opening hours</h4><ul>
+        <li>Mon – Fri: 8:00 – 18:00</li><li>Saturday: 9:00 – 14:00</li><li>Sunday: Closed</li>
+      </ul></div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="services.html">Services</a></li><li><a href="mot.html">MOT testing</a></li>
+        <li><a href="pricing.html">Pricing</a></li><li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Book now</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Fast Track Motors. All rights reserved.</span>
+      <span>Privacy · Terms · Cookies · Built with care</span>
+    </div>
+  </div>
+</footer>
+<div class="mobile-bar">
+  <a href="tel:01910000000" class="call">Call now</a>
+  <a href="contact.html" class="book">Book online</a>
+</div>
+<script src="js/main.js"></script>
+
+</body>
+</html>

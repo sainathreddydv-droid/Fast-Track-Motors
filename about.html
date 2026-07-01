@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Fast Track Motors | Newcastle Car Mechanic</title>
+<meta name="description" content="Meet Fast Track Motors — an independent, honest car garage in Newcastle upon Tyne built on straight talk, quality repairs and fair pricing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/system.css">
+<style>
+/* page hero shared */
+.page-hero{padding:150px 0 70px; position:relative; overflow:hidden;}
+.page-hero::before{content:""; position:absolute; inset:0; background:radial-gradient(120% 80% at 85% 0%, rgba(14,90,87,0.05), transparent 55%), radial-gradient(90% 70% at 5% 100%, rgba(194,32,47,0.04), transparent 50%);}
+.page-hero .wrap{position:relative; z-index:2;}
+.page-hero .crumbs{font-family:var(--font-mono); font-size:12.5px; color:var(--slate); margin-bottom:20px; letter-spacing:0.03em;}
+.page-hero .crumbs a:hover{color:var(--red);}
+.page-hero h1{max-width:780px; margin-bottom:20px;}
+.page-hero .sub{font-size:18px; max-width:600px; line-height:1.65;}
+
+.cta{position:relative; overflow:hidden; background:var(--ink);}
+.cta-bgimg{position:absolute; inset:0; opacity:0.16;}
+.cta-bgimg img{width:100%; height:100%; object-fit:cover;}
+.cta::after{content:""; position:absolute; inset:0; background:linear-gradient(105deg, var(--ink) 38%, rgba(20,24,31,0.72) 100%);}
+.cta .wrap{position:relative; z-index:2; text-align:center; max-width:720px;}
+.cta h2{color:#fff; margin-bottom:18px;}
+.cta p{color:rgba(255,255,255,0.72); font-size:17px; margin-bottom:36px; max-width:520px; margin-left:auto; margin-right:auto;}
+.cta-actions{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
+
+.about-intro{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;}
+.about-intro .media{border-radius:var(--r-lg); overflow:hidden; box-shadow:var(--shadow-md); aspect-ratio:4/3;}
+.about-intro .media img{width:100%; height:100%; object-fit:cover;}
+.about-intro p{font-size:16.5px; line-height:1.7; margin-bottom:18px;}
+@media(max-width:860px){.about-intro{grid-template-columns:1fr; gap:34px;}}
+.values{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+.value-card{background:var(--white); border:1px solid var(--line); border-radius:var(--r-md); padding:32px;}
+.value-card .ic{width:50px; height:50px; border-radius:13px; background:var(--teal-tint); display:flex; align-items:center; justify-content:center; margin-bottom:18px;}
+.value-card .ic svg{width:25px; height:25px; stroke:var(--teal); fill:none;}
+.value-card h3{font-size:19px; margin-bottom:9px;}
+.value-card p{font-size:14.5px; line-height:1.6;}
+@media(max-width:760px){.values{grid-template-columns:1fr;}}
+.stats-band{background:var(--ink); border-radius:var(--r-lg); padding:50px; display:grid; grid-template-columns:repeat(4,1fr); gap:30px; text-align:center;}
+.stats-band .s strong{font-family:var(--font-display); font-weight:800; font-size:44px; color:#fff; display:block; line-height:1;}
+.stats-band .s strong .u{color:var(--red);}
+.stats-band .s span{font-size:13.5px; color:rgba(255,255,255,0.6); margin-top:8px; display:block;}
+@media(max-width:760px){.stats-band{grid-template-columns:1fr 1fr; gap:34px; padding:40px 30px;}}
+
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="brand">
+        <img src="logo.jpg" alt="Fast Track Motors">
+        <span class="brand-txt"><strong>Fast Track Motors</strong><span>Newcastle upon Tyne</span></span>
+      </a>
+      <div class="nav-menu"><a href="index.html">Home</a><a href="services.html">Services</a><a href="mot.html">MOT</a><a href="pricing.html">Pricing</a><a href="about.html" class="active">About</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a></div>
+      <div class="nav-right">
+        <a href="tel:01910000000" class="nav-phone">
+          <svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          0191 000 0000
+        </a>
+        <a href="contact.html" class="btn btn-primary">Book now</a>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumbs" data-reveal><a href="index.html">Home</a> / About</div>
+    <span class="eyebrow" data-reveal>Our story</span>
+    <h1 data-reveal data-reveal-delay="1">A garage built on straight talk.</h1>
+    <p class="sub" data-reveal data-reveal-delay="2">We're a small, independent team in Newcastle who got tired of seeing drivers handed bills they didn't understand. So we built the garage we'd want to use ourselves.</p>
+  </div>
+</section>
+<section style="padding-top:20px;">
+  <div class="wrap">
+    <div class="about-intro">
+      <div class="media" data-reveal><img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=800&q=80" alt="Inside the Fast Track Motors workshop" onerror="this.src='https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80'"></div>
+      <div data-reveal data-reveal-delay="1">
+        <span class="eyebrow teal">Why we started</span>
+        <h2 style="margin-bottom:18px;">Honest mechanics, plain English.</h2>
+        <p>Fast Track Motors began with a simple frustration: too many garages treat customers like they won't understand. We do the opposite. We show you the worn part, explain what it does, and let you make the call.</p>
+        <p>Every technician here is qualified and insured, every repair is guaranteed for 12 months, and every price is agreed before a spanner is lifted. That's it. No mystery, no upsell, no surprises on the invoice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="padding-top:30px;">
+  <div class="wrap">
+    <div class="section-head center"><span class="eyebrow" data-reveal>What we stand for</span><h2 data-reveal data-reveal-delay="1">Three things we never compromise on.</h2></div>
+    <div class="values">
+      <div class="value-card" data-reveal><div class="ic"><svg viewBox="0 0 24 24" stroke-width="1.7"><path d="M12 2L4 6v6c0 5 3.5 8.7 8 10 4.5-1.3 8-5 8-10V6z"/></svg></div><h3>Honesty</h3><p>We only recommend what your car genuinely needs. If it can wait, we'll tell you. If it's urgent, we'll explain why.</p></div>
+      <div class="value-card" data-reveal data-reveal-delay="1"><div class="ic"><svg viewBox="0 0 24 24" stroke-width="1.7"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3>Quality</h3><p>Genuine or OE-matching parts, qualified hands, and a 12-month guarantee on every repair we carry out.</p></div>
+      <div class="value-card" data-reveal data-reveal-delay="2"><div class="ic"><svg viewBox="0 0 24 24" stroke-width="1.7"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg></div><h3>Speed</h3><p>Most jobs done same day. We respect that you've got a life to get on with — and a car you need back.</p></div>
+    </div>
+  </div>
+</section>
+<section style="padding-top:20px;">
+  <div class="wrap">
+    <div class="stats-band" data-reveal>
+      <div class="s"><strong><span data-count="15">0</span><span class="u">+</span></strong><span>Years experience</span></div>
+      <div class="s"><strong><span data-count="1200">0</span><span class="u">+</span></strong><span>Cars fixed yearly</span></div>
+      <div class="s"><strong><span data-count="4.9" data-dec="1">0</span></strong><span>Average rating</span></div>
+      <div class="s"><strong><span data-count="12">0</span></strong><span>Month warranty</span></div>
+    </div>
+  </div>
+</section>
+<section class="cta">
+  <div class="cta-bgimg"><img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1400&q=80" alt=""></div>
+  <div class="wrap">
+    <h2 data-reveal>Come and see the difference.</h2>
+    <p data-reveal data-reveal-delay="1">Book online or drop by the workshop — we'll always make time to talk you through it.</p>
+    <div class="cta-actions" data-reveal data-reveal-delay="2"><a href="contact.html" class="btn btn-primary">Book a visit</a><a href="tel:01910000000" class="btn btn-ghost-light">0191 000 0000</a></div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="logo.jpg" alt="Fast Track Motors">
+        <p>Independent car mechanic specialist serving Newcastle upon Tyne and the surrounding North East.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Google"><svg viewBox="0 0 24 24" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Workshop</h4><ul>
+        <li>Unit 4, Industrial Estate</li><li>Newcastle upon Tyne, NE4</li>
+        <li><a href="tel:01910000000">0191 000 0000</a></li>
+        <li><a href="mailto:info@fasttrackmotors.co.uk">info@fasttrackmotors.co.uk</a></li>
+      </ul></div>
+      <div><h4>Opening hours</h4><ul>
+        <li>Mon – Fri: 8:00 – 18:00</li><li>Saturday: 9:00 – 14:00</li><li>Sunday: Closed</li>
+      </ul></div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="services.html">Services</a></li><li><a href="mot.html">MOT testing</a></li>
+        <li><a href="pricing.html">Pricing</a></li><li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Book now</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Fast Track Motors. All rights reserved.</span>
+      <span>Privacy · Terms · Cookies · Built with care</span>
+    </div>
+  </div>
+</footer>
+<div class="mobile-bar">
+  <a href="tel:01910000000" class="call">Call now</a>
+  <a href="contact.html" class="book">Book online</a>
+</div>
+<script src="js/main.js"></script>
+
+</body>
+</html>

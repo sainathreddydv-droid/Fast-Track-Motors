@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Services in Newcastle | Fast Track Motors</title>
+<meta name="description" content="MOT, servicing, diagnostics, brakes, tyres and air con in Newcastle upon Tyne. Genuine parts, honest pricing, 12-month guarantee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/system.css">
+<style>
+/* page hero shared */
+.page-hero{padding:150px 0 70px; position:relative; overflow:hidden;}
+.page-hero::before{content:""; position:absolute; inset:0; background:radial-gradient(120% 80% at 85% 0%, rgba(14,90,87,0.05), transparent 55%), radial-gradient(90% 70% at 5% 100%, rgba(194,32,47,0.04), transparent 50%);}
+.page-hero .wrap{position:relative; z-index:2;}
+.page-hero .crumbs{font-family:var(--font-mono); font-size:12.5px; color:var(--slate); margin-bottom:20px; letter-spacing:0.03em;}
+.page-hero .crumbs a:hover{color:var(--red);}
+.page-hero h1{max-width:780px; margin-bottom:20px;}
+.page-hero .sub{font-size:18px; max-width:600px; line-height:1.65;}
+
+.svc-detail{padding:0 0 110px;}
+.svc-row{display:grid; grid-template-columns:1fr 1fr; gap:54px; align-items:center; padding:46px 0; border-top:1px solid var(--line);}
+.svc-row:nth-child(even) .svc-media{order:2;}
+.svc-media{border-radius:var(--r-lg); overflow:hidden; box-shadow:var(--shadow-md); aspect-ratio:16/11;}
+.svc-media img{width:100%; height:100%; object-fit:cover;}
+.svc-body .tag{margin-bottom:18px;}
+.svc-body h2{font-size:30px; margin-bottom:14px;}
+.svc-body p{font-size:16px; line-height:1.65; margin-bottom:20px;}
+.svc-incl{list-style:none; margin-bottom:24px;}
+.svc-incl li{display:flex; gap:11px; align-items:flex-start; padding:7px 0; font-size:15px; color:var(--ink-soft);}
+.svc-incl svg{width:19px; height:19px; stroke:var(--teal); fill:none; flex-shrink:0; margin-top:2px;}
+.svc-body .price-line{font-family:var(--font-mono); font-size:15px; color:var(--ink); margin-bottom:22px;}
+.svc-body .price-line b{color:var(--red); font-size:18px;}
+@media(max-width:860px){.svc-row{grid-template-columns:1fr; gap:28px; padding:38px 0;} .svc-row:nth-child(even) .svc-media{order:-1;} .svc-media{aspect-ratio:16/10;}}
+
+.cta{position:relative; overflow:hidden; background:var(--ink);}
+.cta-bgimg{position:absolute; inset:0; opacity:0.16;}
+.cta-bgimg img{width:100%; height:100%; object-fit:cover;}
+.cta::after{content:""; position:absolute; inset:0; background:linear-gradient(105deg, var(--ink) 38%, rgba(20,24,31,0.72) 100%);}
+.cta .wrap{position:relative; z-index:2; text-align:center; max-width:720px;}
+.cta h2{color:#fff; margin-bottom:18px;}
+.cta p{color:rgba(255,255,255,0.72); font-size:17px; margin-bottom:36px; max-width:520px; margin-left:auto; margin-right:auto;}
+.cta-actions{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
+
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="brand">
+        <img src="logo.jpg" alt="Fast Track Motors">
+        <span class="brand-txt"><strong>Fast Track Motors</strong><span>Newcastle upon Tyne</span></span>
+      </a>
+      <div class="nav-menu"><a href="index.html">Home</a><a href="services.html" class="active">Services</a><a href="mot.html">MOT</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a></div>
+      <div class="nav-right">
+        <a href="tel:01910000000" class="nav-phone">
+          <svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          0191 000 0000
+        </a>
+        <a href="contact.html" class="btn btn-primary">Book now</a>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumbs" data-reveal><a href="index.html">Home</a> / Services</div>
+    <span class="eyebrow" data-reveal>Full-service workshop</span>
+    <h1 data-reveal data-reveal-delay="1">Everything your car needs, done properly.</h1>
+    <p class="sub" data-reveal data-reveal-delay="2">From the annual MOT to engine diagnostics, our Newcastle workshop covers it all — genuine parts, honest pricing, and a 12-month guarantee on every repair.</p>
+  </div>
+</section>
+<section class="svc-detail">
+  <div class="wrap">
+    <div class="svc-row">
+      <div class="svc-media" data-reveal><img src="https://images.unsplash.com/photo-1632823471565-1ecdf5e3e1e0?auto=format&fit=crop&w=800&q=80" alt="MOT inspection" onerror="this.src='https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80'"></div>
+      <div class="svc-body" data-reveal data-reveal-delay="1">
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>MOT testing</span>
+        <h2>Class 4 MOT testing</h2><p>Our DVSA-approved testers carry out the full MOT on site while you wait or drop off. If anything fails, we'll explain exactly why and give you a clear quote — with a free retest within 10 days.</p>
+        <ul class="svc-incl"><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Full DVSA Class 4 MOT inspection</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Free retest within 10 days</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Honest pass/fail explanation</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>While-you-wait or drop-off</li></ul>
+        <div class="price-line">From <b>£39.99</b></div>
+        <a href="contact.html" class="btn btn-primary">Book this service</a>
+      </div>
+    </div>
+    <div class="svc-row">
+      <div class="svc-media" data-reveal><img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80" alt="Car servicing" onerror="this.src='https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80'"></div>
+      <div class="svc-body" data-reveal data-reveal-delay="1">
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Servicing</span>
+        <h2>Interim & full servicing</h2><p>Keep your car healthy and your warranty valid with servicing to manufacturer schedule. We use genuine or OE-matching parts and give you a full digital service record.</p>
+        <ul class="svc-incl"><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Oil & filter replacement</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Up to 50-point full service check</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Genuine or OE-matching parts</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Digital service record</li></ul>
+        <div class="price-line">Interim from <b>£89</b> · Full from <b>£149</b></div>
+        <a href="contact.html" class="btn btn-primary">Book this service</a>
+      </div>
+    </div>
+    <div class="svc-row">
+      <div class="svc-media" data-reveal><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80" alt="Car diagnostics" onerror="this.src='https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80'"></div>
+      <div class="svc-body" data-reveal data-reveal-delay="1">
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Diagnostics</span>
+        <h2>Computer diagnostics</h2><p>Got a warning light or a noise you can't place? Our diagnostic equipment reads every system in your car and we translate it into plain English — no scary jargon.</p>
+        <ul class="svc-incl"><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Full multi-system fault scan</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Plain-English written report</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Fixed diagnostic fee, no surprises</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Fee deducted if you book the repair</li></ul>
+        <div class="price-line">From <b>£45</b></div>
+        <a href="contact.html" class="btn btn-primary">Book this service</a>
+      </div>
+    </div>
+    <div class="svc-row">
+      <div class="svc-media" data-reveal><img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=800&q=80" alt="Brake repair" onerror="this.src='https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80'"></div>
+      <div class="svc-body" data-reveal data-reveal-delay="1">
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Brakes & clutch</span>
+        <h2>Brakes, clutch & suspension</h2><p>Stopping power and smooth gear changes are non-negotiable. We replace pads, discs, clutches and suspension components using quality parts, with a free brake check every visit.</p>
+        <ul class="svc-incl"><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Brake pads, discs & callipers</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Full clutch replacement</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Suspension & steering repairs</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Free brake check on every visit</li></ul>
+        <div class="price-line">From <b>£79</b></div>
+        <a href="contact.html" class="btn btn-primary">Book this service</a>
+      </div>
+    </div>
+    <div class="svc-row">
+      <div class="svc-media" data-reveal><img src="https://images.unsplash.com/photo-1599256621730-535171e28e50?auto=format&fit=crop&w=800&q=80" alt="Tyre fitting" onerror="this.src='https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80'"></div>
+      <div class="svc-body" data-reveal data-reveal-delay="1">
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Tyres</span>
+        <h2>Tyres & wheel alignment</h2><p>Major brands and quality budget options, fitted, balanced and aligned. Worn or uneven tyres? We'll show you the tread and let you decide — never a hard sell.</p>
+        <ul class="svc-incl"><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Premium & budget tyre brands</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Fitting & wheel balancing</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Laser 4-wheel alignment</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Free tread & pressure check</li></ul>
+        <div class="price-line">From <b>£35</b> per tyre fitted</div>
+        <a href="contact.html" class="btn btn-primary">Book this service</a>
+      </div>
+    </div>
+    <div class="svc-row">
+      <div class="svc-media" data-reveal><img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80" alt="Air con service" onerror="this.src='https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80'"></div>
+      <div class="svc-body" data-reveal data-reveal-delay="1">
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Air conditioning</span>
+        <h2>Air con re-gas & repair</h2><p>If the cold air's gone warm, we'll re-gas, leak-test and get your climate control working again — keeping the cabin comfortable all year round.</p>
+        <ul class="svc-incl"><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Full air con re-gas</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Leak detection & repair</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Anti-bacterial cleanse option</li><li><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Works on R134a & R1234yf systems</li></ul>
+        <div class="price-line">From <b>£49</b></div>
+        <a href="contact.html" class="btn btn-primary">Book this service</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cta" style="margin-top:0;">
+  <div class="cta-bgimg"><img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1400&q=80" alt=""></div>
+  <div class="wrap">
+    <h2 data-reveal>Not sure what your car needs?</h2>
+    <p data-reveal data-reveal-delay="1">Tell us the symptoms and we'll point you the right way — no obligation, no jargon.</p>
+    <div class="cta-actions" data-reveal data-reveal-delay="2">
+      <a href="contact.html" class="btn btn-primary">Get in touch</a>
+      <a href="tel:01910000000" class="btn btn-ghost-light">0191 000 0000</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="logo.jpg" alt="Fast Track Motors">
+        <p>Independent car mechanic specialist serving Newcastle upon Tyne and the surrounding North East.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Google"><svg viewBox="0 0 24 24" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Workshop</h4><ul>
+        <li>Unit 4, Industrial Estate</li><li>Newcastle upon Tyne, NE4</li>
+        <li><a href="tel:01910000000">0191 000 0000</a></li>
+        <li><a href="mailto:info@fasttrackmotors.co.uk">info@fasttrackmotors.co.uk</a></li>
+      </ul></div>
+      <div><h4>Opening hours</h4><ul>
+        <li>Mon – Fri: 8:00 – 18:00</li><li>Saturday: 9:00 – 14:00</li><li>Sunday: Closed</li>
+      </ul></div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="services.html">Services</a></li><li><a href="mot.html">MOT testing</a></li>
+        <li><a href="pricing.html">Pricing</a></li><li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Book now</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Fast Track Motors. All rights reserved.</span>
+      <span>Privacy · Terms · Cookies · Built with care</span>
+    </div>
+  </div>
+</footer>
+<div class="mobile-bar">
+  <a href="tel:01910000000" class="call">Call now</a>
+  <a href="contact.html" class="book">Book online</a>
+</div>
+<script src="js/main.js"></script>
+
+</body>
+</html>
