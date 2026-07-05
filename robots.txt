@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fast-track-motors.vercel.app/sitemap.xml

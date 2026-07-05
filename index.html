@@ -5,6 +5,64 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fast Track Motors — Car Servicing & MOT in Newcastle upon Tyne</title>
 <meta name="description" content="Trusted car mechanic specialist in Newcastle upon Tyne. MOT testing, servicing, diagnostics and repairs — booked online, fixed first time, fully guaranteed.">
+<link rel="canonical" href="https://fast-track-motors.vercel.app/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#14181F">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fast Track Motors">
+<meta property="og:title" content="Fast Track Motors — Car Servicing & MOT in Newcastle upon Tyne">
+<meta property="og:description" content="Trusted car mechanic specialist in Newcastle upon Tyne. MOT testing, servicing, diagnostics and repairs — booked online, fixed first time, fully guaranteed.">
+<meta property="og:url" content="https://fast-track-motors.vercel.app/">
+<meta property="og:image" content="https://fast-track-motors.vercel.app/images/hero-mechanic.jpg">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fast Track Motors — Car Servicing & MOT in Newcastle upon Tyne">
+<meta name="twitter:description" content="Trusted car mechanic specialist in Newcastle upon Tyne. MOT testing, servicing, diagnostics and repairs — booked online, fixed first time, fully guaranteed.">
+<meta name="twitter:image" content="https://fast-track-motors.vercel.app/images/hero-mechanic.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Fast Track Motors",
+  "image": "https://fast-track-motors.vercel.app/images/hero-mechanic.jpg",
+  "url": "https://fast-track-motors.vercel.app/",
+  "telephone": "+44-191-000-0000",
+  "priceRange": "££",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Unit 4, Industrial Estate",
+    "addressLocality": "Newcastle upon Tyne",
+    "postalCode": "NE4",
+    "addressCountry": "GB"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday"],
+      "opens": "09:00",
+      "closes": "14:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "280"
+  }
+}
+</script>
+<!-- NOTE: telephone/address above are placeholders carried over from the site content.
+     Update this block (and the matching text in the page) once the real contact
+     number, address and socials are confirmed. -->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -14,7 +72,7 @@
 
 /* HERO */
 .hero{
-  position:relative; min-height:100vh; display:flex; align-items:center;
+  position:relative; min-height:100vh; min-height:100dvh; display:flex; align-items:center;
   padding-top:120px; padding-bottom:60px; overflow:hidden;
 }
 .hero-bg{
@@ -188,6 +246,7 @@
         <a href="services.html">Services</a>
         <a href="mot.html">MOT</a>
         <a href="pricing.html">Pricing</a>
+        <a href="offers.html">Offers</a>
         <a href="about.html">About</a>
         <a href="reviews.html">Reviews</a>
         <a href="contact.html">Contact</a>
@@ -225,8 +284,7 @@
     </div>
     <div class="hero-visual" data-reveal data-reveal-delay="2">
       <div class="hero-frame">
-        <img data-parallax src="https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e1e?auto=format&fit=crop&w=900&q=80" alt="Mechanic working on a car in the workshop"
-             onerror="this.src='https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80'">
+        <picture><source srcset="images/hero-mechanic.webp" type="image/webp"><img data-parallax src="images/hero-mechanic.jpg" alt="Mechanic working on a car in the workshop" loading="eager" fetchpriority="high" decoding="async" width="1000" height="612"></picture>
         <div class="hero-overlay-grad"></div>
       </div>
       <div class="float-card float-rating">
@@ -310,8 +368,7 @@
 <section class="split">
   <div class="wrap">
     <div class="split-visual" data-reveal>
-      <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=800&q=80" alt="Friendly mechanic explaining a repair to a customer"
-           onerror="this.src='https://images.unsplash.com/photo-1599256621730-535171e28e50?auto=format&fit=crop&w=800&q=80'">
+      <picture><source srcset="images/why-mechanic.webp" type="image/webp"><img src="images/why-mechanic.jpg" alt="Friendly mechanic explaining a repair to a customer" loading="lazy" decoding="async"></picture>
       <div class="split-stat">
         <div class="s"><strong data-count="15">0</strong><span>Years experience</span></div>
         <div class="s"><strong>£0</strong><span>Hidden costs</span></div>
@@ -391,7 +448,7 @@
 
 <!-- BIG CTA -->
 <section class="cta">
-  <div class="cta-bgimg"><img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1400&q=80" alt=""></div>
+  <div class="cta-bgimg"><picture><source srcset="images/cta-bg.webp" type="image/webp"><img src="images/cta-bg.jpg" alt="" loading="lazy" decoding="async"></picture></div>
   <div class="wrap">
     <h2 data-reveal>Got a car that needs sorting?</h2>
     <p data-reveal data-reveal-delay="1">Book online in under a minute, or call the workshop directly. We'll have you back on the road — properly fixed, fully guaranteed.</p>
@@ -438,6 +495,7 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="mot.html">MOT testing</a></li>
           <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="offers.html">Offers</a></li>
           <li><a href="about.html">About us</a></li>
           <li><a href="contact.html">Book now</a></li>
         </ul>
